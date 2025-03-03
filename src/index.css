@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-white text-daraz-black font-sans;
+}
+
+@layer components {
+  .container-custom {
+    @apply max-w-[1188px] mx-auto px-4;
+  }
+  
+  .btn-orange {
+    @apply bg-daraz-orange text-white px-4 py-2 rounded hover:opacity-90 transition-opacity;
+  }
+  
+  .btn-outline {
+    @apply border border-daraz-gray text-daraz-darkgray px-4 py-2 rounded hover:bg-daraz-lightgray transition-colors;
+  }
+  
+  .nav-link {
+    @apply text-sm text-white hover:text-daraz-orange transition-colors;
+  }
+  
+  .category-card {
+    @apply bg-white p-2 rounded shadow hover:shadow-md transition-shadow cursor-pointer;
+  }
+  
+  .product-card {
+    @apply bg-white rounded overflow-hidden shadow hover:shadow-md transition-shadow;
+  }
+}
